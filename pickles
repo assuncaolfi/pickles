@@ -1,10 +1,10 @@
 #!/bin/bash
 
 echo
-echo pickles recursively looks for all wav files in your samples folder.
+echo pickles recursively finds all wav files in your samples folder.
 echo Each file will be played, and you must assign it to a folder.
 echo If you leave a blank folder name, the file will be removed.
-echo If in doubt, just assign the file back to the samples folder.
+echo When in doubt, just reassign the file back to the samples folder.
 
 find samples -name "*.wav" -print0 | while read -d $'\0' file
 do
@@ -21,6 +21,6 @@ do
         name=$(basename "$file")
         path=$(echo "$folder/$name")
         mv "$file" "$path"
-        echo "Moved $file to $path"
+        echo "Moved to $path"
     fi
 done
