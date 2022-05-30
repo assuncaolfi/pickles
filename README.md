@@ -2,7 +2,7 @@
 
 Pick (audio) samples (or music).
 
-Install `ffmpeg`, clone this repo and run `source pickles`
+Install `ffmpeg`, clone this repo, cd into it and run `./pickles`
 to recursively look for all wav files in your samples folder.
 Each file will be played, and you must assign it to a folder.
 If you leave a blank folder name, the file will be removed.
